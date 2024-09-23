@@ -1,0 +1,22 @@
+2024-09-20 17:26:31.589  INFO 12520 --- [main] com.llz.LlzSpringbootApplication         : Starting LlzSpringbootApplication using Java 11.0.7 on LLZ-SSR with PID 12520 (E:\dev_llz\demo\llz_springboot-start\target\classes started by 13264 in E:\dev_llz\demo)
+2024-09-20 17:26:31.591 DEBUG 12520 --- [main] com.llz.LlzSpringbootApplication         : Running with Spring Boot v2.6.13, Spring v5.3.23
+2024-09-20 17:26:31.591  INFO 12520 --- [main] com.llz.LlzSpringbootApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-20 17:26:32.129  INFO 12520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-09-20 17:26:32.133  INFO 12520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-20 17:26:32.134  INFO 12520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-09-20 17:26:32.193  INFO 12520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-20 17:26:32.193  INFO 12520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 578 ms
+2024-09-20 17:26:33.280  INFO 12520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-09-20 17:26:33.287  INFO 12520 --- [main] com.llz.LlzSpringbootApplication         : Started LlzSpringbootApplication in 1.936 seconds (JVM running for 2.748)
+2024-09-20 17:26:35.788  INFO 12520 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-20 17:26:35.789  INFO 12520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-20 17:26:35.789  INFO 12520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-20 17:26:35.828  INFO 12520 --- [http-nio-8081-exec-1] com.llz.common.log.LogTrace4Request      : 请求参数:ValiTestVO(userName=222, password=555, gender=)
+2024-09-20 17:26:35.870  INFO 12520 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-20 17:26:35.944  INFO 12520 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-20 17:26:35.948 DEBUG 12520 --- [http-nio-8081-exec-1] com.llz.dao.Test1Dao.selectById          : ==>  Preparing: SELECT id,name,gender,classnum,subject,score FROM student WHERE id=?
+2024-09-20 17:26:35.959 DEBUG 12520 --- [http-nio-8081-exec-1] com.llz.dao.Test1Dao.selectById          : ==> Parameters: 2(String)
+2024-09-20 17:26:35.970 DEBUG 12520 --- [http-nio-8081-exec-1] com.llz.dao.Test1Dao.selectById          : <==      Total: 1
+2024-09-20 17:26:35.980  INFO 12520 --- [http-nio-8081-exec-1] com.llz.common.log.LogTrace4Response     : 响应参数:ResultVO(code=0, msg=成功, data=Student(id=2, name=李婷, gender=2, classnum=1702, subject=null, score=null))
+2024-09-20 18:26:55.738  INFO 12520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-20 18:26:55.741  INFO 12520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
